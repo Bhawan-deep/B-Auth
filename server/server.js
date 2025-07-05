@@ -15,8 +15,8 @@ const db = process.env.MONGO_URL;
 
 // Middleware
 const allowedOrigins = [
-  "https://bauthhh.netlify.app"
-  "https://b-auth-backend.onrender.com",
+  "https://bauthhh.netlify.app",
+
   "http://localhost:5173"
 ];
 
