@@ -14,8 +14,19 @@ const port = process.env.PORT;
 const db = process.env.MONGO_URL;
 
 // Middleware
+const allowedOrigins = [
+  "https://your-frontend.onrender.com",
+  "http://localhost:5173"
+];
+
 app.use(cors({
-  origin: (origin, callback) => callback(null, true),
+  origin: (origin, callback) => {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
   credentials: true
 }));
 
