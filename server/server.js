@@ -15,7 +15,7 @@ const db = process.env.MONGO_URL;
 
 // Middleware
 const allowedOrigins = [
-  "https://your-frontend.onrender.com",
+  "https://b-auth-backend.onrender.com",
   "http://localhost:5173"
 ];
 
