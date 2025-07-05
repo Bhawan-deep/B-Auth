@@ -1,4 +1,4 @@
-.env
+
 client/vite-project/.env
 node_modules/
 client/vite-project/node_modules/
